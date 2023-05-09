@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JS buổi 6</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        width: 90%;
+        margin: 0 auto;
+        padding: 20px 0;
+    }
+    .container h2{
+        color: black;
+        margin-bottom: 10px;
+    }
+    .container form{
+        display: flex;
+        align-items: center;
+    }
+    .container form input{
+        height: 40px;
+        width: 250px;
+        padding: 0 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+    .container form button{
+        height: 40px;
+        background-color: royalblue;
+        color: white;
+        font-size: 18px;
+        padding: 0 10px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+    .container #timSo, #tinhTong, #giaiThua, #soLuong{
+        margin-top: 20px;
+        font-size: 22px;
+        color: royalblue;
+    }
+    .container #soNguyento{
+        margin-top: 10px;
+        font-size: 22px;
+        color: red;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <h2>Bài 1: Tìm số nguyên dương nhỏ nhất, sao cho 1 + 2 + 3 + ... +n > 10000</h2>
+        <form action="">
+            <input type="text" value="10000" id="number" disabled>
+            <button type="button" onclick="timSo()">Tìm số</button>
+        </form>
+        <div id="timSo"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Bài 2: Tính tổng số S(n) = x + x^1 + x^2 + ... + x^n</h2>
+        <form action="">
+            <input type="text" id="x" placeholder="Nhập số x">
+            <input type="text" id="n" placeholder="Nhập số n">
+            <button type="button" onclick="tinhTong()">Tính tổng</button>
+        </form>
+        <div id="tinhTong"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Bài 3: Nhập vào n, tính giai thừa 1 * 2 * 3 * ... * n</h2>
+        <form action="">
+            <input type="text" id="soN" placeholder="Nhập số n">
+            <button type="button" onclick="giaiThua()">Tính giai thừa</button>
+        </form>
+        <div id="giaiThua"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Bài 4: In ra 10 thẻ div, thẻ div vị trí chẵn có màu nền là đỏ, thẻ div vị trí lẻ có màu mền là xanh</h2>
+        <form action="">
+            <button type="button" onclick="inThediv()">Click in 10 thẻ div</button>
+        </form>
+        <div id="theDiv"></div>
+    </div>
+    <hr>
+    <div class="container">
+        <h2>Bài 5: Tìm các số nguyên tố trong dãy số từ 2 đến n</h2>
+        <form action="">
+            <input type="text" id="soNhapvao" placeholder="Nhập vào số n lớn hơn 1">
+            <button type="button" onclick="timSonguyento()">Truy tìm số nguyên tố</button>
+        </form>
+        <div id="soLuong"></div>
+        <div id="soNguyento"></div>
+    </div>
+    <!-- link main.js -->
+    <script src="./main.js"></script>
+</body>
+</html>
